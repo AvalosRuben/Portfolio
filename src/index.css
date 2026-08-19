@@ -1,1 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --color-cream: #d2c7b2;
+  --color-cream-dark: #c2b49e;
+  --color-cream-light: #ddd4c2;
+
+  --color-charcoal: #1a1a1a;
+  --color-charcoal-mid: #2e2e2e;
+  --color-charcoal-light: #4a4a4a;
+  --color-charcoal-faint: #6a6a6a;
+
+  --color-ink: #0f0f0f;
+
+  --font-mono: "Space Mono", "Courier Prime", monospace;
+}
