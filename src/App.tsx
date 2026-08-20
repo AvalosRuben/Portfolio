@@ -37,16 +37,31 @@ function App() {
         <div className="flex gap-10 w-full">
           <div className="flex flex-col gap-8 w-1/4 items-center">
             <div className="border border-charcoal/60 relative">
-              <div className="absolute -top-px -left-px border-t-8 border-l-8 border-r-8 border-b-8 border-t-charcoal border-l-charcoal border-r-transparent border-b-transparent" />
-              <div className="absolute -top-px -right-px border-t-8 border-l-8 border-r-8 border-b-8 border-t-charcoal border-r-charcoal border-l-transparent border-b-transparent" />
-              <div className="absolute -bottom-px -left-px border-t-8 border-l-8 border-r-8 border-b-8 border-b-charcoal border-l-charcoal border-r-transparent border-t-transparent" />
-              <div className="absolute -bottom-px -right-px border-t-8 border-l-8 border-r-8 border-b-8 border-b-charcoal border-r-charcoal border-l-transparent border-t-transparent" />
+              <div className="absolute -top-px -left-px border-t-8 border-l-8 border-r-8 border-b-8 border-t-charcoal/60 border-l-charcoal/60 border-r-transparent border-b-transparent" />
+              <div className="absolute -top-px -right-px border-t-8 border-l-8 border-r-8 border-b-8 border-t-charcoal/60 border-r-charcoal/60 border-l-transparent border-b-transparent" />
+              <div className="absolute -bottom-px -left-px border-t-8 border-l-8 border-r-8 border-b-8 border-b-charcoal/60 border-l-charcoal/60 border-r-transparent border-t-transparent" />
+              <div className="absolute -bottom-px -right-px border-t-8 border-l-8 border-r-8 border-b-8 border-b-charcoal/60 border-r-charcoal/60 border-l-transparent border-t-transparent" />
 
               <img
                 src="yo.jpeg"
                 alt="Profile"
                 className="w-full h-auto block"
               />
+            </div>
+            <div className="w-full border border-charcoal-faint/70 flex flex-col items-center text-xs font-space text-charcoal-faint p-2">
+              <span className="mr-auto ml-1">SYS.STATUS</span>
+              <div className="flex  px-1 w-full justify-between">
+                <span>AVAIL -- </span>
+                <span className="font-bold text-charcoal">IMMEDIATE</span>
+              </div>
+              <div className="flex  px-1 w-full justify-between">
+                <span>MODE -- </span>
+                <span className="font-bold text-charcoal">PART TIME</span>
+              </div>
+              <div className="flex  px-1 w-full justify-between">
+                <span>TZ -- </span>
+                <span className="font-bold text-charcoal">UTC - 6 </span>
+              </div>
             </div>
           </div>
         </div>
