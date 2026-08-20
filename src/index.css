@@ -13,7 +13,8 @@
 
   --color-ink: #0f0f0f;
 
-  --font-mono: "Space Mono", "Courier Prime", monospace;
+  --font-space: "Space Mono", monospace;
+  --font-courier: "Courier Prime", monospace;
 }
 
 .micro-grid {
