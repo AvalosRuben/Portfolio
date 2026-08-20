@@ -34,6 +34,22 @@ function App() {
           <span>NODE.ID :: RA-0042 // SECTOR.7</span>
           <span>INIT.SEQ :: 0x1F4A</span>
         </div>
+        <div className="flex gap-10 w-full">
+          <div className="flex flex-col gap-8 w-1/4 items-center">
+            <div className="border border-charcoal/60 relative">
+              <div className="absolute -top-px -left-px border-t-8 border-l-8 border-r-8 border-b-8 border-t-charcoal border-l-charcoal border-r-transparent border-b-transparent" />
+              <div className="absolute -top-px -right-px border-t-8 border-l-8 border-r-8 border-b-8 border-t-charcoal border-r-charcoal border-l-transparent border-b-transparent" />
+              <div className="absolute -bottom-px -left-px border-t-8 border-l-8 border-r-8 border-b-8 border-b-charcoal border-l-charcoal border-r-transparent border-t-transparent" />
+              <div className="absolute -bottom-px -right-px border-t-8 border-l-8 border-r-8 border-b-8 border-b-charcoal border-r-charcoal border-l-transparent border-t-transparent" />
+
+              <img
+                src="yo.jpeg"
+                alt="Profile"
+                className="w-full h-auto block"
+              />
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
