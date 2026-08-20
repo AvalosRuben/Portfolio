@@ -1,8 +1,8 @@
 function App() {
   return (
     <div className="w-full h-screen bg-cream micro-grid text-charcoal flex flex-col">
-      <header className="border-b border-charcoal-light bg-cream-dark sticky top-0 z-50 w-full font-space tracking-wider">
-        <div className="border-charcoal-faint border-b py-4 px-6 flex items-center justify-between text-xs text-charcoal-light ">
+      <header className="border-b border-charcoal/35 bg-cream-dark sticky top-0 z-50 w-full font-space tracking-wider">
+        <div className="border-charcoal/10  border-b py-4 px-6 flex items-center justify-between text-xs text-charcoal-light ">
           <span>SYS.CLOCK :: 19.8.2026 // UTC-6</span>{" "}
           {/*TODO - Set to the actual date*/}
           <div className="flex gap-10 items-center">
