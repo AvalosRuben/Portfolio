@@ -1,3 +1,4 @@
+import DataStream from "./components/ui/DataStream";
 import InfoTag from "./components/ui/InfoTag";
 
 function App() {
@@ -97,6 +98,9 @@ function App() {
                 I got a great sense of team work and love the golang gopher.
               </p>
             </div>
+          </div>
+          <div className="w-fit">
+            <DataStream />
           </div>
         </div>
       </section>
