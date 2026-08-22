@@ -64,6 +64,15 @@ function App() {
               </div>
             </div>
           </div>
+          <div className="flex flex-col gap-2 items-center w-3/8">
+            <span className="text-charcoal-faint text-xs font-space mr-auto">
+              [ IDENT.RECORD :: RA-0042 ]
+            </span>
+            <div className="flex flex-col text-6xl font-space font-bold text-charcoal border-b border-charcoal w-full pb-6">
+              <span>RUBEN</span>
+              <span>AVALOS</span>
+            </div>
+          </div>
         </div>
       </section>
     </div>
