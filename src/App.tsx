@@ -1,3 +1,5 @@
+import InfoTag from "./components/ui/InfoTag";
+
 function App() {
   return (
     <div className="w-full h-screen bg-cream micro-grid text-charcoal flex flex-col items-center">
@@ -64,13 +66,27 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-2 items-center w-3/8">
+          <div className="flex flex-col gap-2 items-center w-1/2">
             <span className="text-charcoal-faint text-xs font-space mr-auto">
               [ IDENT.RECORD :: RA-0042 ]
             </span>
             <div className="flex flex-col text-6xl font-space font-bold text-charcoal border-b border-charcoal w-full pb-6">
               <span>RUBEN</span>
               <span>AVALOS</span>
+            </div>
+            <div className="w-full flex flex-col gap-2">
+              <div className="flex gap-2 items-center justify-between">
+                <InfoTag title="TITLE" info="SOFTWARE DEV JR" />
+                <InfoTag title="LOCATION" info="MERIDA, YUC" />
+              </div>
+              <div className="flex gap-2 items-center justify-between">
+                <InfoTag title="SPEC" info="BACKEND " />
+                <InfoTag title="EXP" info="6 months" />
+              </div>
+              <div className="flex gap-2 items-center justify-between">
+                <InfoTag title="STATUS" info="OPEN TO OFFERS" />
+                <InfoTag title="LANG" info="ENG // ESP" />
+              </div>
             </div>
           </div>
         </div>
