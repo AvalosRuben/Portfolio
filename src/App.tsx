@@ -88,6 +88,15 @@ function App() {
                 <InfoTag title="LANG" info="ENG // ESP" />
               </div>
             </div>
+            <div className="w-full border border-charcoal-faint/70 flex flex-col items-center text-xs font-space text-charcoal-faint p-2">
+              <span className="mr-auto ml-1">// EXEC.SUMMARY</span>
+              {/* TODO - i got hopes that i'll write something better */}
+              <p className="text-left w-full">
+                Junior Full Stack engineer, looking to start my career. I'm a
+                fast learner always looking for new challenges to keep growing.
+                I got a great sense of team work and love the golang gopher.
+              </p>
+            </div>
           </div>
         </div>
       </section>
