@@ -1,3 +1,4 @@
+import Projects from "./components/Projects";
 import DataStream from "./components/ui/DataStream";
 import InfoTag from "./components/ui/InfoTag";
 
@@ -104,6 +105,7 @@ function App() {
           </div>
         </div>
       </section>
+      <Projects />
     </div>
   );
 }
