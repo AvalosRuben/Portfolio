@@ -4,7 +4,8 @@ const ProjectsInfo = [
   {
     name: "Maria & Montejo",
     state: "Deployed",
-    description: "",
+    description:
+      "A modern, elegant, single-page, responsive site of my favourite coffee shop. Designed and coded entirely by myself! ",
     img: "/MariaYMontejoBanner.png",
     technologies: ["Typescript", "React", "Vercel", "TailwindCSS"],
     link: "https://mariaymontejo.vercel.app/",
