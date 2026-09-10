@@ -3,7 +3,7 @@ import InfoTag from "./ui/InfoTag";
 
 function Hero() {
   return (
-    <div className="w-full h-screen flex flex-col items-center">
+    <div className="w-full h-fit pb-10 flex flex-col items-center">
       <header className="border-b border-charcoal/35 bg-cream-dark sticky top-0 z-50 w-full font-space tracking-wider">
         <div className="border-charcoal/10  border-b py-4 px-6 flex items-center justify-between text-xs text-charcoal-light ">
           <span>SYS.CLOCK :: 19.8.2026 // UTC-6</span>{" "}
@@ -31,7 +31,7 @@ function Hero() {
           </div>
         </div>
       </header>
-      <section className="w-[70vw] h-screen" id="summary">
+      <section className="w-[70vw] h-fit" id="summary">
         <div className="flex items-center justify-between text-xs font-space text-charcoal-faint py-10">
           <span>37°46'N / 122°25'W</span>
           <span>NODE.ID :: RA-0042 // SECTOR.7</span>
