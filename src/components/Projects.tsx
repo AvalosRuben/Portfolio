@@ -1,5 +1,15 @@
 import SingleProject from "./ui/SingleProject";
 
+const ProjectsInfo = [
+  {
+    name: "Maria & Montejo",
+    state: "Deployed",
+    description: "",
+    img: "/MariaYMontejoBanner.png",
+    technologies: ["Typescript", "React", "Vercel", "TailwindCSS"],
+  },
+];
+
 function Projects() {
   return (
     <section className="w-[70vw] h-screen mt-4" id="projects">
@@ -11,13 +21,15 @@ function Projects() {
         <div className="w-full border-b border-charcoal-faint/60" />
       </div>
       <div className="grid grid-cols-2 gap-4 w-full">
-        <SingleProject
-          name="Maria & Montejo"
-          state="Deployed"
-          description="aa"
-          img="/MariaYMontejoBanner.png"
-          technologies={["Typescript", "React", "Vercel"]}
-        />
+        {ProjectsInfo.map((p) => (
+          <SingleProject
+            name={p.name}
+            state={p.state}
+            description={p.description}
+            img={p.img}
+            technologies={p.technologies}
+          />
+        ))}
       </div>
     </section>
   );
