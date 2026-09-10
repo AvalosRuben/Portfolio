@@ -7,6 +7,7 @@ const ProjectsInfo = [
     description: "",
     img: "/MariaYMontejoBanner.png",
     technologies: ["Typescript", "React", "Vercel", "TailwindCSS"],
+    link: "https://mariaymontejo.vercel.app/",
   },
 ];
 
@@ -28,6 +29,7 @@ function Projects() {
             description={p.description}
             img={p.img}
             technologies={p.technologies}
+            link={p.link}
           />
         ))}
       </div>
