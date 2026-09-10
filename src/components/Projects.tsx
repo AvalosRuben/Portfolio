@@ -11,8 +11,13 @@ function Projects() {
         <div className="w-full border-b border-charcoal-faint/60" />
       </div>
       <div className="grid grid-cols-2 gap-4 w-full">
-        <SingleProject />
-        <SingleProject />
+        <SingleProject
+          name="Maria & Montejo"
+          state="Deployed"
+          description="aa"
+          img="/MariaYMontejoBanner.png"
+          technologies={["Typescript", "React", "Vercel"]}
+        />
       </div>
     </section>
   );
