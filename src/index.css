@@ -15,6 +15,9 @@
 
   --font-space: "Space Mono", monospace;
   --font-courier: "Courier Prime", monospace;
+
+  --text-xxs: 0.5625rem; /* 9px */
+  --text-xxs--line-height: 0.75rem; /* 12px */
 }
 
 .micro-grid {
