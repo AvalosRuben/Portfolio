@@ -1,1 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --color-cream: #d2c7b2;
+  --color-cream-dark: #c2b49e;
+  --color-cream-light: #ddd4c2;
+
+  --color-charcoal: #1a1a1a;
+  --color-charcoal-mid: #2e2e2e;
+  --color-charcoal-light: #4a4a4a;
+  --color-charcoal-faint: #6a6a6a;
+
+  --color-ink: #0f0f0f;
+
+  --font-space: "Space Mono", monospace;
+  --font-courier: "Courier Prime", monospace;
+
+  --text-xxs: 0.5625rem; /* 9px */
+  --text-xxs--line-height: 0.75rem; /* 12px */
+}
+
+.micro-grid {
+  background-image:
+    linear-gradient(rgba(26, 26, 26, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26, 26, 26, 0.07) 1px, transparent 1px);
+  background-size: 8px 8px;
+}
