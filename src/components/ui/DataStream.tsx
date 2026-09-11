@@ -1,5 +1,3 @@
-import React from "react";
-
 const DATA_LINES = [
   "LRXR.IRP.942.MHI.QME",
   "VPSR.CVE.962.ICQ.MCI",
