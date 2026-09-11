@@ -3,15 +3,18 @@ import InfoTag from "./ui/InfoTag";
 
 function Hero() {
   return (
-    <div className="w-full h-fit pb-10 flex flex-col items-center">
-      <section className="w-[70vw] h-fit" id="summary">
-        <div className="flex items-center justify-between text-xs font-space text-charcoal-faint py-10">
+    <div className="w-full h-fit pb-10 flex flex-col items-center overflow-x-hidden">
+      <section
+        className="w-[90vw] md:w-[80vw] lg:w-[70vw] h-fit mx-auto"
+        id="summary"
+      >
+        <div className="flex items-center justify-between text-xxs sm:text-xs font-space text-charcoal-faint py-6 md:py-10">
           <span>37°46'N / 122°25'W</span>
           <span>NODE.ID :: RA-0042 // SECTOR.7</span>
           <span>INIT.SEQ :: 0x1F4A</span>
         </div>
         <div className="flex gap-10 w-full">
-          <div className="flex flex-col gap-8 w-1/4 items-center">
+          <div className="flex flex-col gap-8 w-1/2 md:w-1/4 items-center">
             <div className="border border-charcoal/60 relative">
               <div className="absolute -top-px -left-px border-t-8 border-l-8 border-r-8 border-b-8 border-t-charcoal/60 border-l-charcoal/60 border-r-transparent border-b-transparent" />
               <div className="absolute -top-px -right-px border-t-8 border-l-8 border-r-8 border-b-8 border-t-charcoal/60 border-r-charcoal/60 border-l-transparent border-b-transparent" />
@@ -24,7 +27,7 @@ function Hero() {
                 className="w-full h-auto block"
               />
             </div>
-            <div className="w-full border border-charcoal-faint/70 flex flex-col items-center text-xs font-space text-charcoal-faint p-2">
+            <div className="w-full border border-charcoal-faint/70 flex flex-col items-center text-xxs xl:text-xs font-space text-charcoal-faint p-2">
               <span className="mr-auto ml-1">SYS.STATUS</span>
               <div className="flex  px-1 w-full justify-between">
                 <span>AVAIL -- </span>
@@ -41,10 +44,10 @@ function Hero() {
             </div>
           </div>
           <div className="flex flex-col gap-2 items-center w-1/2">
-            <span className="text-charcoal-faint text-xs font-space mr-auto">
+            <span className="text-charcoal-faint text-xxs sm:text-xs font-space mr-auto">
               [ IDENT.RECORD :: RA-0042 ]
             </span>
-            <div className="flex flex-col text-6xl font-space font-bold text-charcoal border-b border-charcoal w-full pb-6">
+            <div className="flex flex-col text-4xl md:text-6xl font-space font-bold text-charcoal border-b border-charcoal w-full pb-3 sm:pb-4">
               <span>RUBEN</span>
               <span>AVALOS</span>
             </div>
@@ -62,7 +65,7 @@ function Hero() {
                 <InfoTag title="LANG" info="ENG // ESP" />
               </div>
             </div>
-            <div className="w-full border border-charcoal-faint/70 flex flex-col items-center text-xs font-space text-charcoal-faint p-2">
+            <div className="hidden md:block w-full border border-charcoal-faint/70 flex-col items-center text-xxs sm:text-xs font-space text-charcoal-faint p-2">
               <span className="mr-auto ml-1">// EXEC.SUMMARY</span>
               {/* TODO - i got hopes that i'll write something better */}
               <p className="text-left w-full">
@@ -72,9 +75,18 @@ function Hero() {
               </p>
             </div>
           </div>
-          <div className="w-fit">
+          <div className="w-fit hidden md:block">
             <DataStream />
           </div>
+        </div>
+        <div className="md:hidden w-full border border-charcoal-faint/70 flex flex-col items-center text-xxs sm:text-xs font-space text-charcoal-faint p-2 mt-4">
+          <span className="mr-auto ml-1">// EXEC.SUMMARY</span>
+          {/* TODO - i got hopes that i'll write something better */}
+          <p className="text-left w-full">
+            Junior Full Stack engineer, looking to start my career. I'm a fast
+            learner always looking for new challenges to keep growing. I got a
+            great sense of team work and love the golang gopher.
+          </p>
         </div>
       </section>
     </div>
