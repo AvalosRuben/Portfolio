@@ -22,7 +22,7 @@ function SingleProject({
         <div className="w-full h-40 border-b border-charcoal">
           <img src={img} className="w-full h-full object-cover block" />
         </div>
-        <div className="w-full h-40 bg-cream-dark/40 flex flex-col p-6 gap-4">
+        <div className="w-full h-25 sm:h-40 bg-cream-dark/40 flex flex-col p-6 gap-4">
           <div className="flex justify-between">
             <span className="font-space text-sm font-bold text-charcoal">
               {name}
@@ -31,7 +31,7 @@ function SingleProject({
               [{state}]
             </span>
           </div>
-          <span className="font-courier text-xs text-charcoal-light">
+          <span className="hidden sm:block font-courier text-xs text-charcoal-light">
             {description}
           </span>
           <div className="flex items-center gap-2 text-xs font-courier text-charcoal-faint">
