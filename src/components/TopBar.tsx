@@ -1,7 +1,7 @@
 function TopBar() {
   return (
-    <header className="border-b border-charcoal/35 bg-cream-dark sticky top-0 z-50 w-full font-space tracking-wider">
-      <div className="border-charcoal/10  border-b py-4 px-6 flex items-center justify-between text-xs text-charcoal-light ">
+    <header className="border-b border-charcoal/35 bg-cream-dark sticky top-0 z-50 w-full font-space tracking-wider text-xxs sm:text-sm">
+      <div className="hidden border-charcoal/10  border-b py-4 px-6 sm:flex items-center justify-between text-charcoal-light sm:text-xxs">
         <span>SYS.CLOCK :: 19.8.2026 // UTC-6</span>{" "}
         {/*TODO - Set to the actual date*/}
         <div className="flex gap-10 items-center">
@@ -12,8 +12,8 @@ function TopBar() {
           <span>PORT......3</span>
         </div>
       </div>
-      <div className="flex items-center justify-between py-3 text-sm px-6 font-bold text-charcoal">
-        <div className="flex gap-2 items-center justify-between">
+      <div className="flex items-center justify-center sm:justify-between py-3 px-6 font-bold text-charcoal">
+        <div className="hidden sm:flex gap-2 items-center justify-between">
           {/*TODO - Add a figure */}
           <span>RUBEN AVALOS // PORTFOLIO v1.0</span>
         </div>
