@@ -1,5 +1,36 @@
-import ExperiencieBlock from "./ExperienceBlock";
+import ExperiencieBlock, {
+  type ExperiencieBlockProps,
+} from "./ExperienceBlock";
 import ASCIIFlower from "./ui/ASCIIFlower";
+
+const ExperienceInfo: ExperiencieBlockProps[] = [
+  {
+    Title: "Software Dev Intern",
+    Company: "ZIES",
+    Place: "Remote",
+    StartDate: "2026.03",
+    FinishDate: "2026.09",
+    Descriptions: [
+      "Developed a management system to keep track of the employees and their projects from zero, including mockups, data models, frontend and architecture.",
+      "Learned about software design and architecture from the hand of data engineers and solutions architects.",
+      "Gained experience on remote work.",
+    ],
+    Number: 1,
+  },
+  {
+    Title: "Fullstack Dev Intern",
+    Company: "Wayakna",
+    Place: "Mérida, YUC",
+    StartDate: "2026.01",
+    FinishDate: "2026.03",
+    Descriptions: [
+      "Worked as a fullstack dev with a MERN stack on the company projects.",
+      "Gained experience on team work.",
+      "Redesigned the UI completely, giving it a fresh and new look.",
+    ],
+    Number: 2,
+  },
+];
 
 function Experience() {
   return (
@@ -17,20 +48,18 @@ function Experience() {
         <div className="hidden lg:block w-1/4">
           <ASCIIFlower />
         </div>
-        <div className="w-full border-t border-charcoal flex flex-col">
-          <ExperiencieBlock
-            Title="Software Intern"
-            Company="ZIES"
-            Place="Remote"
-            StartDate="2026.03"
-            FinishDate="2026.09"
-            Descriptions={[
-              "Developed a management system to keep track of the employees and their projects from zero, including mockups, data models, frontend and architecture.",
-              "Learned about software design and architecture from the hand of data engineers and solutions architects.",
-              "Gained experience on remote work.",
-            ]}
-            Number={1}
-          />
+        <div className="w-full border-t border-charcoal flex flex-col h-fit border-b">
+          {ExperienceInfo.map((e: ExperiencieBlockProps) => (
+            <ExperiencieBlock
+              Title={e.Title}
+              Company={e.Company}
+              Place={e.Place}
+              StartDate={e.StartDate}
+              FinishDate={e.FinishDate}
+              Descriptions={e.Descriptions}
+              Number={e.Number}
+            />
+          ))}
         </div>
       </div>
     </section>
