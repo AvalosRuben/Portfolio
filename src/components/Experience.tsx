@@ -12,11 +12,11 @@ function Experience() {
           [ EXPERIENCE_LOG ] // CAREER.TELEMETRY
         </span>
       </div>
-      <div className="flex">
-        <div className="hidden sm:block w-1/4">
+      <div className="flex gap-10 w-full lg:pt-4">
+        <div className="hidden lg:block w-1/4">
           <ASCIIFlower />
         </div>
-        <div className=""></div>
+        <div className="w-full border-t border-charcoal"></div>
       </div>
     </section>
   );
