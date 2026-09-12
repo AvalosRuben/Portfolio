@@ -1,3 +1,4 @@
+import ExperiencieBlock from "./ExperienceBlock";
 import ASCIIFlower from "./ui/ASCIIFlower";
 
 function Experience() {
@@ -16,7 +17,21 @@ function Experience() {
         <div className="hidden lg:block w-1/4">
           <ASCIIFlower />
         </div>
-        <div className="w-full border-t border-charcoal"></div>
+        <div className="w-full border-t border-charcoal flex flex-col">
+          <ExperiencieBlock
+            Title="Software Intern"
+            Company="ZIES"
+            Place="Remote"
+            StartDate="2026.03"
+            FinishDate="2026.09"
+            Descriptions={[
+              "Developed a management system to keep track of the employees and their projects from zero, including mockups, data models, frontend and architecture.",
+              "Learned about software design and architecture from the hand of data engineers and solutions architects.",
+              "Gained experience on remote work.",
+            ]}
+            Number={1}
+          />
+        </div>
       </div>
     </section>
   );
