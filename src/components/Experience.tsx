@@ -1,3 +1,5 @@
+import ASCIIFlower from "./ui/ASCIIFlower";
+
 function Experience() {
   return (
     <section
@@ -9,6 +11,12 @@ function Experience() {
         <span className="font-courier text-xs sm:text-sm text-charcoal font-bold tracking-wider shrink-0">
           [ EXPERIENCE_LOG ] // CAREER.TELEMETRY
         </span>
+      </div>
+      <div className="flex">
+        <div className="hidden sm:block w-1/4">
+          <ASCIIFlower />
+        </div>
+        <div className=""></div>
       </div>
     </section>
   );
