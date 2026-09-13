@@ -15,7 +15,7 @@ const ProjectsInfo = [
 function Projects() {
   return (
     <section
-      className="w-[90vw] md:w-[80vw] lg:w-[70vw] h-fit mt-4 pb-10"
+      className="w-[90vw] md:w-[80vw] lg:w-[70vw] h-fit mt-4 pb-6"
       id="projects"
     >
       <div className="flex items-center gap-3 mb-6">
