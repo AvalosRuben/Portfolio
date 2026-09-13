@@ -88,6 +88,11 @@ function Hero() {
             great sense of team work and love the golang gopher.
           </p>
         </div>
+        <div className="flex justify-between font-space text-xxs md:text-xs text-charcoal-faint/40 w-full border-t border-charcoal-faint/40 pt-2 mt-2">
+          <span>SEG.01 // IDENT</span>
+          <span>▲▲▲▲▲░░░░░ 55%</span>
+          <span>NEXT :: FEATURED PROJECTS</span>
+        </div>
       </section>
     </div>
   );
