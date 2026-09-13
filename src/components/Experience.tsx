@@ -62,7 +62,7 @@ function Experience() {
           ))}
         </div>
       </div>
-      <div className="flex justify-between font-space text-xxs md:text-xs text-charcoal-faint/40 w-full border-t border-charcoal-faint/40 pt-2">
+      <div className="flex justify-between font-space text-xxs md:text-xs text-charcoal-faint/40 w-full border-t border-charcoal-faint/40 pt-2 mt-2">
         <span>SEG.03 // EXPERIENCE</span>
         <span>▲▲▲▲▲▲▲░░░ 73% </span>
         <span>NEXT :: TECH STACK</span>
