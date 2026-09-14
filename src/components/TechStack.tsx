@@ -1,4 +1,24 @@
-import TechStackSection from "./ui/TechStackSection";
+import TechStackSection, {
+  type TechStackSectionProps,
+} from "./ui/TechStackSection";
+
+const TechStackInfo: TechStackSectionProps[] = [
+  {
+    Title: "Languages",
+    Tools: ["TypeScript", "Go", "SQL", "Python"],
+  },
+  {
+    Title: "Frontend",
+    Tools: ["React.js", "TailwindCSS", "Vite", "Next.js"],
+  },
+  { Title: "Backend", Tools: ["Node.js", "FastAPI", "Gin-Gonic"] },
+  { Title: "Infra", Tools: ["AWS", "Docker", "Vercel"] },
+  { Title: "Data", Tools: ["PostgreSQL", "MongoDB"] },
+  {
+    Title: "Tools",
+    Tools: ["Linux", "Git", "SCRUM"],
+  },
+];
 
 function TechStack() {
   return (
@@ -18,10 +38,9 @@ function TechStack() {
           <span className="mr-auto text-charcoal-faint/80 text-xxs md:text-xs font-space">
             //STACK.CATALOG
           </span>
-          <TechStackSection
-            Title="Languages"
-            Tools={["TypeScript", "Go", "SQL", "Python"]}
-          />
+          {TechStackInfo.map((t) => (
+            <TechStackSection Title={t.Title} Tools={t.Tools} />
+          ))}
         </div>
       </div>
     </section>

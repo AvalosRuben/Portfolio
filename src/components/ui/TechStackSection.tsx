@@ -1,4 +1,4 @@
-interface TechStackSectionProps {
+export interface TechStackSectionProps {
   Title: string;
   Tools: string[];
 }
@@ -11,7 +11,7 @@ function TechStackSection({ Title, Tools }: TechStackSectionProps) {
       </span>
       <div className="flex gap-2 ">
         {Tools.map((t) => (
-          <span className="p-2 border border-charcoal-faint text-charcoal-light bg-charcoal-faint/5 text-xss md:text-xs tracking-wider">
+          <span className="p-2 border border-charcoal-faint text-charcoal-light bg-charcoal-faint/5 text-xxs md:text-xs tracking-wider">
             [{t}]
           </span>
         ))}
