@@ -33,7 +33,7 @@ function TechStack() {
         </span>
         <div className="w-full border-b border-charcoal-faint/60" />
       </div>
-      <div className="flex flex-col lg:flex-row gap-4 ">
+      <div className="flex flex-col lg:flex-row gap-4 pb-8">
         <div className="flex flex-col gap-2 lg:w-1/2">
           <span className="mr-auto text-charcoal-faint/80 text-xxs md:text-xs font-space">
             //STACK.CATALOG
@@ -56,6 +56,11 @@ function TechStack() {
             style={{ animationDelay: "0.6s" }}
           />
         </div>
+      </div>
+      <div className="flex justify-between font-space text-xxs md:text-xs text-charcoal-faint/40 w-full border-t border-charcoal-faint/40 pt-2 mt-2">
+        <span>SEG.04 // TECH</span>
+        <span>▲▲▲▲▲▲▲▲▲░ 89%</span>
+        <span>NEXT :: CONNECT</span>
       </div>
     </section>
   );
