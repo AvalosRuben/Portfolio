@@ -1,3 +1,5 @@
+import TechStackSection from "./ui/TechStackSection";
+
 function TechStack() {
   return (
     <section
@@ -12,9 +14,15 @@ function TechStack() {
         <div className="w-full border-b border-charcoal-faint/60" />
       </div>
       <div className="flex flex-col lg:flex-row gap-4 w-full">
-        <span className="mr-auto text-charcoal-faint/80 text-xxs md:text-xs font-space">
-          //STACK.CATALOG
-        </span>
+        <div className="flex flex-col gap-2 ">
+          <span className="mr-auto text-charcoal-faint/80 text-xxs md:text-xs font-space">
+            //STACK.CATALOG
+          </span>
+          <TechStackSection
+            Title="Languages"
+            Tools={["TypeScript", "Go", "SQL", "Python"]}
+          />
+        </div>
       </div>
     </section>
   );
