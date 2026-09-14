@@ -12,7 +12,7 @@ function TechStackSection({ Title, Tools }: TechStackSectionProps) {
       <div className="flex gap-2 ">
         {Tools.map((t) => (
           <span
-            className="p-2 border border-charcoal-faint text-charcoal/80 bg-charcoal-faint/5 text-xxs md:text-xs tracking-wider
+            className="px-2 py-1 border border-charcoal-faint text-charcoal/80 bg-charcoal-faint/5 text-xxs md:text-xs tracking-wider
           hover:border-charcoal hover:bg-charcoal-faint/25"
           >
             [{t}]
