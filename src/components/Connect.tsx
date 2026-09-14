@@ -1,3 +1,5 @@
+import ConnectSection from "./ui/ConnectSection";
+
 function Connect() {
   return (
     <section
@@ -12,10 +14,15 @@ function Connect() {
         <div className="w-full border-b border-charcoal-faint/60" />
       </div>
       <div className="flex gap-2">
-        <div className="p-6 w-1/2 border border-charcoal-faint/50 flex flex-col gap-2 ">
+        <div className="p-6 w-full lg:w-1/2 border border-charcoal-faint/50 flex flex-col gap-2 ">
           <span className="text-xs md:text-xs font-space text-charcoal-faint">
             // TERMINAL.SESSION :: CONNECT_
           </span>
+          <ConnectSection
+            Abbreviation="GH"
+            Text="Github"
+            Link="github.com/AvalosRuben"
+          />
         </div>
       </div>
     </section>
