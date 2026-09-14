@@ -26,3 +26,16 @@
     linear-gradient(90deg, rgba(26, 26, 26, 0.07) 1px, transparent 1px);
   background-size: 8px 8px;
 }
+
+@keyframes spin-back-and-forth {
+  0% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+.animate-rock {
+  animation: spin-back-and-forth 3s ease-in-out infinite alternate;
+}

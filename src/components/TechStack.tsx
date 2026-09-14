@@ -43,9 +43,18 @@ function TechStack() {
           ))}
         </div>
         <div className="gap-2 w-1/2 hidden lg:flex ">
-          <img src="/Flower1.png" className="mb-auto h-50" />
-          <img src="/Leaf1.png" className="my-auto h-50" />
-          <img src="/Flower2.png" className="mt-auto h-50" />
+          <img
+            src="/Flower1.png"
+            className="mb-auto h-50 animate-rock"
+            style={{ animationDelay: "2.3s" }}
+          />
+
+          <img src="/Leaf1.png" className="my-auto h-50 animate-rock" />
+          <img
+            src="/Flower2.png"
+            className="mt-auto h-50 animate-rock"
+            style={{ animationDelay: "0.6s" }}
+          />
         </div>
       </div>
     </section>
