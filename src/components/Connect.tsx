@@ -11,6 +11,13 @@ function Connect() {
         </span>
         <div className="w-full border-b border-charcoal-faint/60" />
       </div>
+      <div className="flex gap-2">
+        <div className="p-6 w-1/2 border border-charcoal-faint/50 flex flex-col gap-2 ">
+          <span className="text-xs md:text-xs font-space text-charcoal-faint">
+            // TERMINAL.SESSION :: CONNECT_
+          </span>
+        </div>
+      </div>
     </section>
   );
 }
