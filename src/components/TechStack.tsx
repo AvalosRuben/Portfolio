@@ -33,14 +33,19 @@ function TechStack() {
         </span>
         <div className="w-full border-b border-charcoal-faint/60" />
       </div>
-      <div className="flex flex-col lg:flex-row gap-4 w-full">
-        <div className="flex flex-col gap-2 ">
+      <div className="flex flex-col lg:flex-row gap-4 ">
+        <div className="flex flex-col gap-2 lg:w-1/2">
           <span className="mr-auto text-charcoal-faint/80 text-xxs md:text-xs font-space">
             //STACK.CATALOG
           </span>
           {TechStackInfo.map((t) => (
             <TechStackSection Title={t.Title} Tools={t.Tools} />
           ))}
+        </div>
+        <div className="gap-2 w-1/2 hidden lg:flex ">
+          <img src="/Flower1.png" className="mb-auto h-50" />
+          <img src="/Leaf1.png" className="my-auto h-50" />
+          <img src="/Flower2.png" className="mt-auto h-50" />
         </div>
       </div>
     </section>
