@@ -1,6 +1,7 @@
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
+import TechStack from "./components/TechStack";
 import TopBar from "./components/TopBar";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <Projects />
       <Experience />
+      <TechStack />
     </div>
   );
 }
