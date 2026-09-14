@@ -43,6 +43,7 @@ function Experience() {
         <span className="font-courier text-xs sm:text-sm text-charcoal font-bold tracking-wider shrink-0">
           [ EXPERIENCE_LOG ] // CAREER.TELEMETRY
         </span>
+        <div className="w-full border-b border-charcoal-faint/60" />
       </div>
       <div className="flex gap-10 w-full lg:pt-4">
         <div className="hidden lg:block w-1/4">
