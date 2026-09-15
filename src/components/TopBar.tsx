@@ -1,9 +1,34 @@
+import { useState, useEffect } from "react";
+
 function TopBar() {
+  const [clockString, setClockString] = useState(
+    "SYS.CLOCK :: --.--.---- // UTC...",
+  );
+
+  useEffect(() => {
+    const updateDate = () => {
+      const now = new Date();
+      const day = now.getDate();
+      const month = now.getMonth() + 1;
+      const year = now.getFullYear();
+
+      const offsetHours = -(now.getTimezoneOffset() / 60);
+      const offsetSign = offsetHours >= 0 ? "+" : "";
+
+      setClockString(
+        `SYS.CLOCK :: ${day}.${month}.${year} // UTC${offsetSign}${offsetHours}`,
+      );
+    };
+
+    updateDate();
+
+    const timer = setInterval(updateDate, 60000);
+    return () => clearInterval(timer);
+  }, []);
   return (
     <header className="border-b border-charcoal/35 bg-cream-dark sticky top-0 z-50 w-full font-space tracking-wider text-xxs sm:text-sm">
       <div className="hidden border-charcoal/10  border-b py-4 px-6 sm:flex items-center justify-between text-charcoal-light sm:text-xxs">
-        <span>SYS.CLOCK :: 19.8.2026 // UTC-6</span>{" "}
-        {/*TODO - Set to the actual date*/}
+        <span>{clockString}</span>
         <div className="flex gap-10 items-center">
           <span>SYS.ONLINE</span>
           <span>P(FILT) 45Pa</span>
@@ -14,17 +39,15 @@ function TopBar() {
       </div>
       <div className="flex items-center justify-center sm:justify-between py-3 px-6 font-bold text-charcoal">
         <div className="hidden sm:flex gap-2 items-center justify-between">
-          {/*TODO - Add a figure */}
           <span>RUBEN AVALOS // PORTFOLIO v1.0</span>
         </div>
-        <div className="flex gap-10 items-center">
-          {/*TODO - Change to nav and buttons to set the scroll to id*/}
-          <span>SUMMARY</span>
-          <span>EXP</span>
-          <span>TECH</span>
-          <span>PROJ</span>
-          <span>CONNECT</span>
-        </div>
+        <nav className="flex gap-10 items-center">
+          <a href="#summary">SUMMARY</a>
+          <a href="#projects">PROJ</a>
+          <a href="#experience">EXP</a>
+          <a href="#tech">TECH</a>
+          <a href="#connect">CONNNECT</a>
+        </nav>
       </div>
     </header>
   );
