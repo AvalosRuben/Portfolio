@@ -24,7 +24,7 @@ function TechStack() {
   return (
     <section
       className="w-[90vw] md:w-[80vw] lg:w-[70vw] h-fit mt-4 pb-6"
-      id="TechStack"
+      id="tech"
     >
       <div className="flex items-center gap-3 mb-6">
         <div className="h-2 w-2 bg-charcoal shrink-0" />
