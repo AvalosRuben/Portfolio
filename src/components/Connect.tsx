@@ -50,6 +50,39 @@ function Connect() {
             <span className="inline-block w-2 h-3.5 bg-charcoal-faint cursor-blink" />
           </div>
         </div>
+        <div className="hidden lg:flex lg:flex-col gap-2 p-6 w-1/2 border border-charcoal-faint/50 h-fit">
+          <span className="text-xs md:text-xs font-space text-charcoal-faint">
+            // SYS.INFO
+          </span>
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-space text-charcoal-faint">
+              UNIT.ID
+            </span>
+            <span className="text-xs font-space text-charcoal">
+              RA-3008-NA03
+            </span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-space text-charcoal-faint">
+              BUILD.VER
+            </span>
+            <span className="text-xs font-space text-charcoal">
+              v1.0.0 - stable
+            </span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-space text-charcoal-faint">
+              LAST.DEPLOY
+            </span>
+            <span className="text-xs font-space text-charcoal">09.2026</span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-space text-charcoal-faint">
+              KERNEL
+            </span>
+            <span className="text-xs font-space text-charcoal">ARC.3.3</span>
+          </div>
+        </div>
       </div>
     </section>
   );
