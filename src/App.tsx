@@ -1,3 +1,4 @@
+import Connect from "./components/Connect";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
@@ -12,6 +13,7 @@ function App() {
       <Projects />
       <Experience />
       <TechStack />
+      <Connect />
     </div>
   );
 }
