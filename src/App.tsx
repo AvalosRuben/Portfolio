@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
 import TopBar from "./components/TopBar";
+import BottomBar from "./components/ui/BottomBar";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Experience />
       <TechStack />
       <Connect />
+      <BottomBar />
     </div>
   );
 }
