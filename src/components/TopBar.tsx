@@ -14,17 +14,15 @@ function TopBar() {
       </div>
       <div className="flex items-center justify-center sm:justify-between py-3 px-6 font-bold text-charcoal">
         <div className="hidden sm:flex gap-2 items-center justify-between">
-          {/*TODO - Add a figure */}
           <span>RUBEN AVALOS // PORTFOLIO v1.0</span>
         </div>
-        <div className="flex gap-10 items-center">
-          {/*TODO - Change to nav and buttons to set the scroll to id*/}
-          <span>SUMMARY</span>
-          <span>EXP</span>
-          <span>TECH</span>
-          <span>PROJ</span>
-          <span>CONNECT</span>
-        </div>
+        <nav className="flex gap-10 items-center">
+          <a href="#summary">SUMMARY</a>
+          <a href="#projects">PROJ</a>
+          <a href="#experience">EXP</a>
+          <a href="#tech">TECH</a>
+          <a href="#connect">CONNNECT</a>
+        </nav>
       </div>
     </header>
   );
