@@ -1,4 +1,22 @@
-import ConnectSection from "./ui/ConnectSection";
+import ConnectSection, { type ConnectSectionProps } from "./ui/ConnectSection";
+
+const ConnectInfo: ConnectSectionProps[] = [
+  {
+    Abbreviation: "GH",
+    Text: "Github",
+    Link: "github.com/AvalosRuben",
+  },
+  {
+    Abbreviation: "LI",
+    Text: "Linkedin",
+    Link: "linkedin.com/in/ruben-avalos-martinez-04154030b/",
+  },
+  {
+    Abbreviation: "MA",
+    Text: "Email",
+    Link: "rubenavalosmtz@gmail.com",
+  },
+];
 
 function Connect() {
   return (
@@ -18,11 +36,19 @@ function Connect() {
           <span className="text-xs md:text-xs font-space text-charcoal-faint">
             // TERMINAL.SESSION :: CONNECT_
           </span>
-          <ConnectSection
-            Abbreviation="GH"
-            Text="Github"
-            Link="github.com/AvalosRuben"
-          />
+          {ConnectInfo.map((c) => (
+            <ConnectSection
+              Abbreviation={c.Abbreviation}
+              Text={c.Text}
+              Link={c.Link}
+            />
+          ))}
+          <div className="flex gap-2 items-center justify-center mr-auto mt-2">
+            <span className="text-xs lg:text-sm font-space text-charcoal-faint tracking-widest ">
+              &gt; CONNECT_
+            </span>
+            <span className="inline-block w-2 h-3.5 bg-charcoal-faint cursor-blink" />
+          </div>
         </div>
       </div>
     </section>
