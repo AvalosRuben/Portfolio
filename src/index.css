@@ -36,10 +36,6 @@
   }
 }
 
-.animate-rock {
-  animation: spin-back-and-forth 3s ease-in-out infinite alternate;
-}
-
 @keyframes blink-cursor {
   0%,
   100% {
