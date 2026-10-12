@@ -1,3 +1,5 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import TechStackSection, {
   type TechStackSectionProps,
 } from "./ui/TechStackSection";
@@ -21,6 +23,25 @@ const TechStackInfo: TechStackSectionProps[] = [
 ];
 
 function TechStack() {
+  useGSAP(() => {
+    gsap.fromTo(
+      ".flower1",
+      {
+        rotation: "-20°",
+        ease: "sine.out",
+        yoyo: true,
+        repeat: -1,
+      },
+      {
+        rotation: "45°",
+        duration: 2,
+        ease: "sine.out",
+        yoyo: true,
+        repeat: -1,
+      },
+    );
+  });
+
   return (
     <section
       className="w-[90vw] md:w-[80vw] lg:w-[70vw] h-fit mt-4 pb-6"
@@ -44,13 +65,19 @@ function TechStack() {
         </div>
         <div className="gap-2 w-1/2 hidden lg:flex ">
           <img
+            id="#Flower1"
             src="/Flower1.png"
-            className="mb-auto h-50 animate-rock"
+            className="mb-auto h-50 flower1"
             style={{ animationDelay: "2.3s" }}
           />
 
-          <img src="/Leaf1.png" className="my-auto h-50 animate-rock" />
           <img
+            id="#Leaf1"
+            src="/Leaf1.png"
+            className="my-auto h-50 animate-rock"
+          />
+          <img
+            id="#Flower2"
             src="/Flower2.png"
             className="mt-auto h-50 animate-rock"
             style={{ animationDelay: "0.6s" }}
