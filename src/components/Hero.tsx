@@ -1,7 +1,10 @@
 import DataStream from "./ui/DataStream";
 import InfoTag from "./ui/InfoTag";
+import gsap from "gsap";
 
 function Hero() {
+  let heroTl = gsap.timeline();
+
   return (
     <div className="w-full h-fit pb-10 flex flex-col items-center overflow-x-hidden">
       <section
