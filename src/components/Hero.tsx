@@ -1,9 +1,39 @@
+import { useGSAP } from "@gsap/react";
 import DataStream from "./ui/DataStream";
 import InfoTag from "./ui/InfoTag";
 import gsap from "gsap";
 
 function Hero() {
-  let heroTl = gsap.timeline();
+  useGSAP(() => {
+    const heroTl = gsap.timeline();
+    heroTl.from(".image", {
+      duration: 0.3,
+      opacity: 0,
+      y: 20,
+      stagger: 0.3,
+    });
+    heroTl.from(".name", {
+      duration: 0.3,
+      opacity: 0,
+      y: 20,
+    });
+    heroTl.from(".infoTag", {
+      duration: 0.3,
+      opacity: 0,
+      y: 20,
+      stagger: 0.2,
+    });
+    heroTl.from(".summary", {
+      duration: 0.3,
+      opacity: 0,
+      y: 20,
+    });
+    heroTl.from(".dataStream", {
+      duration: 0.3,
+      opacity: 0,
+      y: 20,
+    });
+  });
 
   return (
     <div className="w-full h-fit pb-10 flex flex-col items-center overflow-x-hidden">
@@ -18,7 +48,7 @@ function Hero() {
         </div>
         <div className="flex gap-10 w-full">
           <div className="flex flex-col gap-8 w-1/2 md:w-1/4 items-center">
-            <div className="border border-charcoal/60 relative">
+            <div className="border border-charcoal/60 relative image">
               <div className="absolute -top-px -left-px border-t-8 border-l-8 border-r-8 border-b-8 border-t-charcoal/60 border-l-charcoal/60 border-r-transparent border-b-transparent" />
               <div className="absolute -top-px -right-px border-t-8 border-l-8 border-r-8 border-b-8 border-t-charcoal/60 border-r-charcoal/60 border-l-transparent border-b-transparent" />
               <div className="absolute -bottom-px -left-px border-t-8 border-l-8 border-r-8 border-b-8 border-b-charcoal/60 border-l-charcoal/60 border-r-transparent border-t-transparent" />
@@ -30,7 +60,7 @@ function Hero() {
                 className="w-full h-auto block"
               />
             </div>
-            <div className="w-full border border-charcoal-faint/70 flex flex-col items-center text-xxs xl:text-xs font-space text-charcoal-faint p-2">
+            <div className="w-full border border-charcoal-faint/70 flex flex-col items-center text-xxs xl:text-xs font-space text-charcoal-faint p-2 image">
               <span className="mr-auto ml-1">SYS.STATUS</span>
               <div className="flex  px-1 w-full justify-between">
                 <span>AVAIL -- </span>
@@ -50,7 +80,7 @@ function Hero() {
             <span className="text-charcoal-faint text-xxs sm:text-xs font-space mr-auto">
               [ IDENT.RECORD :: RA-0042 ]
             </span>
-            <div className="flex flex-col text-4xl md:text-6xl font-space font-bold text-charcoal border-b border-charcoal w-full pb-3 sm:pb-4">
+            <div className="flex flex-col text-4xl md:text-6xl font-space font-bold text-charcoal border-b border-charcoal w-full pb-3 sm:pb-4 name">
               <span>RUBEN</span>
               <span>AVALOS</span>
             </div>
@@ -68,7 +98,7 @@ function Hero() {
                 <InfoTag title="LANG" info="ENG // ESP" />
               </div>
             </div>
-            <div className="hidden md:block w-full border border-charcoal-faint/70 flex-col items-center text-xxs sm:text-xs font-space text-charcoal-faint p-2">
+            <div className="hidden md:block w-full border border-charcoal-faint/70 flex-col items-center text-xxs sm:text-xs font-space text-charcoal-faint p-2 summary">
               <span className="mr-auto ml-1">// EXEC.SUMMARY</span>
               {/* TODO - i got hopes that i'll write something better */}
               <p className="text-left w-full">
@@ -78,7 +108,7 @@ function Hero() {
               </p>
             </div>
           </div>
-          <div className="w-fit hidden md:block">
+          <div className="w-fit hidden md:block dataStream">
             <DataStream />
           </div>
         </div>
