@@ -33,6 +33,11 @@ function Hero() {
       opacity: 0,
       y: 20,
     });
+    heroTl.from(".bottom", {
+      duration: 0.3,
+      opacity: 0,
+      y: 20,
+    });
   });
 
   return (
@@ -121,7 +126,7 @@ function Hero() {
             great sense of team work and love the golang gopher.
           </p>
         </div>
-        <div className="flex justify-between font-space text-xxs md:text-xs text-charcoal-faint/40 w-full border-t border-charcoal-faint/40 pt-2 mt-2">
+        <div className="flex justify-between font-space text-xxs md:text-xs text-charcoal-faint/40 w-full border-t border-charcoal-faint/40 pt-2 mt-2 bottom">
           <span>SEG.01 // IDENT</span>
           <span>▲▲▲▲▲░░░░░ 55%</span>
           <span>NEXT :: FEATURED PROJECTS</span>
