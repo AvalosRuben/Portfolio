@@ -6,38 +6,39 @@ import gsap from "gsap";
 function Hero() {
   useGSAP(() => {
     const heroTl = gsap.timeline();
-    heroTl.from(".image", {
-      duration: 0.3,
-      opacity: 0,
-      y: 20,
-      stagger: 0.3,
-    });
-    heroTl.from(".name", {
-      duration: 0.3,
-      opacity: 0,
-      y: 20,
-    });
-    heroTl.from(".infoTag", {
-      duration: 0.3,
-      opacity: 0,
-      y: 20,
-      stagger: 0.2,
-    });
-    heroTl.from(".summary", {
-      duration: 0.3,
-      opacity: 0,
-      y: 20,
-    });
-    heroTl.from(".dataStream", {
-      duration: 0.3,
-      opacity: 0,
-      y: 20,
-    });
-    heroTl.from(".bottom", {
-      duration: 0.3,
-      opacity: 0,
-      y: 20,
-    });
+    heroTl
+      .from(".image", {
+        duration: 0.3,
+        opacity: 0,
+        y: 20,
+        stagger: 0.3,
+      })
+      .from(".name", {
+        duration: 0.3,
+        opacity: 0,
+        y: 20,
+      })
+      .from(".infoTag", {
+        duration: 0.3,
+        opacity: 0,
+        y: 20,
+        stagger: 0.2,
+      })
+      .from(".summary", {
+        duration: 0.3,
+        opacity: 0,
+        y: 20,
+      })
+      .from(".dataStream", {
+        duration: 0.3,
+        opacity: 0,
+        y: 20,
+      })
+      .from(".bottom", {
+        duration: 0.3,
+        opacity: 0,
+        y: 20,
+      });
   });
 
   return (
