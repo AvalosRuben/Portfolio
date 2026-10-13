@@ -4,7 +4,7 @@ interface InfoTagProps {
 }
 function InfoTag({ title, info }: InfoTagProps) {
   return (
-    <div className="flex flex-col font-space w-full border-b border-charcoal-faint/50 pb-2 pt-1">
+    <div className="flex flex-col font-space w-full border-b border-charcoal-faint/50 pb-2 pt-1 infoTag">
       <span className="text-xxs sm:text-xs text-charcoal-faint mr-auto">
         {title}
       </span>
