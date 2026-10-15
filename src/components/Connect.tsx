@@ -1,3 +1,6 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ConnectSection, { type ConnectSectionProps } from "./ui/ConnectSection";
 
 const ConnectInfo: ConnectSectionProps[] = [
@@ -19,12 +22,22 @@ const ConnectInfo: ConnectSectionProps[] = [
 ];
 
 function Connect() {
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const connectTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#connect",
+        start: "top 70%",
+      },
+    });
+    connectTl.from(".connect-title", { duration: 0.3, opacity: 0, y: 20 });
+  });
   return (
     <section
       className="w-[90vw] md:w-[80vw] lg:w-[70vw] h-fit mt-4 pb-6"
       id="connect"
     >
-      <div className="flex items-center gap-3 mb-6">
+      <div className="flex items-center gap-3 mb-6 connect-title">
         <div className="h-2 w-2 bg-charcoal shrink-0" />
         <span className="font-courier text-xs sm:text-sm text-charcoal font-bold tracking-wider shrink-0">
           [ CONNECT ] // ENDPOINT.DIRECTORY
