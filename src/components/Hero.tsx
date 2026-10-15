@@ -96,7 +96,7 @@ function Hero() {
                 <InfoTag title="LOCATION" info="MERIDA, YUC" />
               </div>
               <div className="flex gap-2 items-center justify-between">
-                <InfoTag title="SPEC" info="BACKEND " />
+                <InfoTag title="SPEC" info="Software Engineer " />
                 <InfoTag title="EXP" info="6 months" />
               </div>
               <div className="flex gap-2 items-center justify-between">
