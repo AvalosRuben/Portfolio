@@ -1,4 +1,5 @@
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import TechStackSection, {
   type TechStackSectionProps,
@@ -24,6 +25,13 @@ const TechStackInfo: TechStackSectionProps[] = [
 
 function TechStack() {
   useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const techTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#tech",
+        start: "top center",
+      },
+    });
     gsap.fromTo(
       ".animate",
       {
