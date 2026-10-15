@@ -33,6 +33,18 @@ function TechStack() {
       },
     });
     techTl.from(".tech-title", { duration: 0.3, opacity: 0, y: 20 });
+    techTl.from(".techsection-title", {
+      duration: 0.3,
+      opacity: 0,
+      y: 20,
+      stagger: 0.2,
+    });
+    techTl.from(".techsection-tool", {
+      duration: 0.3,
+      opacity: 0,
+      y: 20,
+      stagger: 0.2,
+    });
     gsap.fromTo(
       ".animate",
       {
@@ -66,7 +78,7 @@ function TechStack() {
       </div>
       <div className="flex flex-col lg:flex-row gap-4 pb-8">
         <div className="flex flex-col gap-2 lg:w-1/2">
-          <span className="mr-auto text-charcoal-faint/80 text-xxs md:text-xs font-space">
+          <span className="mr-auto text-charcoal-faint/80 text-xxs md:text-xs font-space title-decor">
             //STACK.CATALOG
           </span>
           {TechStackInfo.map((t) => (
