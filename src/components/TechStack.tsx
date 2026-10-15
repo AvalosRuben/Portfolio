@@ -47,7 +47,12 @@ function TechStack() {
         y: 20,
         stagger: 0.2,
       })
-      .from(".animate", { duration: 0.3, opacity: 0, y: 20, stagger: 0.2 });
+      .from(".animate", { duration: 0.3, opacity: 0, y: 20, stagger: 0.2 })
+      .from(".tech-bottom-decor", {
+        duration: 0.3,
+        opacity: 0,
+        y: 20,
+      });
     gsap.fromTo(
       //I won't add this to the timeline so when the images appear, they're already moving :)
       ".animate",
@@ -104,7 +109,7 @@ function TechStack() {
           />
         </div>
       </div>
-      <div className="flex justify-between font-space text-xxs md:text-xs text-charcoal-faint/40 w-full border-t border-charcoal-faint/40 pt-2 mt-2">
+      <div className="flex justify-between font-space text-xxs md:text-xs text-charcoal-faint/40 w-full border-t border-charcoal-faint/40 pt-2 mt-2 tech-bottom-decor">
         <span>SEG.04 // TECH</span>
         <span>▲▲▲▲▲▲▲▲▲░ 89%</span>
         <span>NEXT :: CONNECT</span>
