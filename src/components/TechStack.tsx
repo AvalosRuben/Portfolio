@@ -1,4 +1,5 @@
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import TechStackSection, {
   type TechStackSectionProps,
@@ -24,7 +25,36 @@ const TechStackInfo: TechStackSectionProps[] = [
 
 function TechStack() {
   useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const techTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#tech",
+        start: "top center",
+      },
+    });
+    techTl
+      .from(".tech-title", { duration: 0.3, opacity: 0, y: 20 })
+      .from(".title-decor", { duration: 0.3, opacity: 0, y: 20 })
+      .from(".techsection-title", {
+        duration: 0.3,
+        opacity: 0,
+        y: 20,
+        stagger: 0.2,
+      })
+      .from(".techsection-tool", {
+        duration: 0.3,
+        opacity: 0,
+        y: 20,
+        stagger: 0.2,
+      })
+      .from(".animate", { duration: 0.3, opacity: 0, y: 20, stagger: 0.2 })
+      .from(".tech-bottom-decor", {
+        duration: 0.3,
+        opacity: 0,
+        y: 20,
+      });
     gsap.fromTo(
+      //I won't add this to the timeline so when the images appear, they're already moving :)
       ".animate",
       {
         rotation: "-20°",
@@ -48,7 +78,7 @@ function TechStack() {
       className="w-[90vw] md:w-[80vw] lg:w-[70vw] h-fit mt-4 pb-6"
       id="tech"
     >
-      <div className="flex items-center gap-3 mb-6">
+      <div className="flex items-center gap-3 mb-6 tech-title">
         <div className="h-2 w-2 bg-charcoal shrink-0" />
         <span className="font-courier text-xs sm:text-sm text-charcoal font-bold tracking-wider shrink-0">
           [ TECH_STACK ] // CAPABILITY.MATRIX
@@ -57,7 +87,7 @@ function TechStack() {
       </div>
       <div className="flex flex-col lg:flex-row gap-4 pb-8">
         <div className="flex flex-col gap-2 lg:w-1/2">
-          <span className="mr-auto text-charcoal-faint/80 text-xxs md:text-xs font-space">
+          <span className="mr-auto text-charcoal-faint/80 text-xxs md:text-xs font-space title-decor">
             //STACK.CATALOG
           </span>
           {TechStackInfo.map((t) => (
@@ -79,7 +109,7 @@ function TechStack() {
           />
         </div>
       </div>
-      <div className="flex justify-between font-space text-xxs md:text-xs text-charcoal-faint/40 w-full border-t border-charcoal-faint/40 pt-2 mt-2">
+      <div className="flex justify-between font-space text-xxs md:text-xs text-charcoal-faint/40 w-full border-t border-charcoal-faint/40 pt-2 mt-2 tech-bottom-decor">
         <span>SEG.04 // TECH</span>
         <span>▲▲▲▲▲▲▲▲▲░ 89%</span>
         <span>NEXT :: CONNECT</span>
