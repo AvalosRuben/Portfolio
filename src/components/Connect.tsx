@@ -95,7 +95,7 @@ function Connect() {
               BUILD.VER
             </span>
             <span className="text-xs font-space text-charcoal">
-              v1.0.0 - stable
+              v1.1.0 - stable
             </span>
           </div>
           <div className="flex items-center justify-between decor-text">
