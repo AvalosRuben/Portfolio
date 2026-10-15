@@ -38,7 +38,8 @@ function Connect() {
         opacity: 0,
         y: 20,
         stagger: 0.3,
-      });
+      })
+      .from(".connect-decor", { duration: 0.3, opacity: 0, y: 20 });
   });
   return (
     <section
@@ -71,7 +72,7 @@ function Connect() {
             <span className="inline-block w-2 h-3.5 bg-charcoal-faint cursor-blink" />
           </div>
         </div>
-        <div className="hidden lg:flex lg:flex-col gap-2 p-6 w-1/2 border border-charcoal-faint/50 h-fit">
+        <div className="hidden lg:flex lg:flex-col gap-2 p-6 w-1/2 border border-charcoal-faint/50 h-fit connect-decor">
           <span className="text-xs md:text-xs font-space text-charcoal-faint">
             // SYS.INFO
           </span>
