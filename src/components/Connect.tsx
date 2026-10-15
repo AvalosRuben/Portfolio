@@ -39,7 +39,13 @@ function Connect() {
         y: 20,
         stagger: 0.3,
       })
-      .from(".connect-decor", { duration: 0.3, opacity: 0, y: 20 });
+      .from(".connect-decor", { duration: 0.3, opacity: 0, y: 20 })
+      .from(".decor-text", {
+        duration: 0.3,
+        opacity: 0,
+        y: 20,
+        stagger: 0.3,
+      });
   });
   return (
     <section
@@ -76,7 +82,7 @@ function Connect() {
           <span className="text-xs md:text-xs font-space text-charcoal-faint">
             // SYS.INFO
           </span>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between decor-text">
             <span className="text-xs font-space text-charcoal-faint">
               UNIT.ID
             </span>
@@ -84,7 +90,7 @@ function Connect() {
               RA-3008-NA03
             </span>
           </div>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between decor-text">
             <span className="text-xs font-space text-charcoal-faint">
               BUILD.VER
             </span>
@@ -92,13 +98,13 @@ function Connect() {
               v1.0.0 - stable
             </span>
           </div>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between decor-text">
             <span className="text-xs font-space text-charcoal-faint">
               LAST.DEPLOY
             </span>
             <span className="text-xs font-space text-charcoal">09.2026</span>
           </div>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between decor-text">
             <span className="text-xs font-space text-charcoal-faint">
               KERNEL
             </span>
