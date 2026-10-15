@@ -96,7 +96,7 @@ function Hero() {
                 <InfoTag title="LOCATION" info="MERIDA, YUC" />
               </div>
               <div className="flex gap-2 items-center justify-between">
-                <InfoTag title="SPEC" info="BACKEND " />
+                <InfoTag title="SPEC" info="Software Engineer " />
                 <InfoTag title="EXP" info="6 months" />
               </div>
               <div className="flex gap-2 items-center justify-between">
@@ -106,11 +106,11 @@ function Hero() {
             </div>
             <div className="hidden md:block w-full border border-charcoal-faint/70 flex-col items-center text-xxs sm:text-xs font-space text-charcoal-faint p-2 summary">
               <span className="mr-auto ml-1">// EXEC.SUMMARY</span>
-              {/* TODO - i got hopes that i'll write something better */}
               <p className="text-left w-full">
                 Junior Full Stack engineer, looking to start my career. I'm a
                 fast learner always looking for new challenges to keep growing.
-                I got a great sense of team work and love the golang gopher.
+                I specialize on desigining and coding quick and nice looking
+                systems.
               </p>
             </div>
           </div>

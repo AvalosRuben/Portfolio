@@ -95,14 +95,14 @@ function Connect() {
               BUILD.VER
             </span>
             <span className="text-xs font-space text-charcoal">
-              v1.0.0 - stable
+              v1.1.0 - stable
             </span>
           </div>
           <div className="flex items-center justify-between decor-text">
             <span className="text-xs font-space text-charcoal-faint">
               LAST.DEPLOY
             </span>
-            <span className="text-xs font-space text-charcoal">09.2026</span>
+            <span className="text-xs font-space text-charcoal">10.2026</span>
           </div>
           <div className="flex items-center justify-between decor-text">
             <span className="text-xs font-space text-charcoal-faint">

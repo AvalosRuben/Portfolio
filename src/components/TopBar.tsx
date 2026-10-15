@@ -39,7 +39,7 @@ function TopBar() {
       </div>
       <div className="flex items-center justify-center sm:justify-between py-3 px-6 font-bold text-charcoal">
         <div className="hidden sm:flex gap-2 items-center justify-between">
-          <span>RUBEN AVALOS // PORTFOLIO v1.0</span>
+          <span>RUBEN AVALOS // PORTFOLIO v1.1</span>
         </div>
         <nav className="flex gap-10 items-center">
           <a href="#summary">SUMMARY</a>
