@@ -17,7 +17,7 @@ function SingleProject({
 }: SingleProjectProps) {
   return (
     <a href={link}>
-      <div className="group relative w-full flex flex-col border border-charcoal-faint items-center ">
+      <div className="group relative w-full flex flex-col border border-charcoal-faint items-center single-project">
         <div className="absolute inset-0 bg-charcoal/7 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10" />
         <div className="w-full h-40 border-b border-charcoal">
           <img src={img} className="w-full h-full object-cover block" />

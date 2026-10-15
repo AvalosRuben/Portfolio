@@ -8,8 +8,8 @@ export interface ConnectSectionProps {
 
 function ConnectSection({ Abbreviation, Text, Link }: ConnectSectionProps) {
   return (
-    <div className="flex py-3 border-b border-charcoal-faint/50 hover:pl-4 transition-all">
-      <div className="flex gap-4 items-center justify-center w-full ">
+    <div className="flex py-3 border-b border-charcoal-faint/50 hover:pl-4 transition-all ">
+      <div className="flex gap-4 items-center justify-center w-full connect-section">
         <span className="text-charcoal-faint text-xxs lg:text-xs tracking-wider">
           {Abbreviation.toUpperCase()}://
         </span>

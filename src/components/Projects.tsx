@@ -1,4 +1,7 @@
+import { useGSAP } from "@gsap/react";
 import SingleProject from "./ui/SingleProject";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const ProjectsInfo = [
   {
@@ -13,19 +16,38 @@ const ProjectsInfo = [
 ];
 
 function Projects() {
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const projectsTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#projects",
+        start: "top center",
+      },
+    });
+
+    projectsTl
+      .from(".title", { duration: 0.3, opacity: 0, y: 20 })
+      .from(".single-project", {
+        duration: 0.3,
+        opacity: 0,
+        y: 20,
+        stagger: 0.3,
+      })
+      .from(".bottom-decor", { duration: 0.3, opacity: 0, y: 20 });
+  });
   return (
     <section
       className="w-[90vw] md:w-[80vw] lg:w-[70vw] h-fit mt-4 pb-6"
       id="projects"
     >
-      <div className="flex items-center gap-3 mb-6">
+      <div className="flex items-center gap-3 mb-6 title">
         <div className="h-2 w-2 bg-charcoal shrink-0" />
         <span className="font-courier text-xs sm:text-sm text-charcoal font-bold tracking-wider shrink-0">
           [ FEATURED_PROJECTS ] // OUTPUT.RECORD
         </span>
-        <div className="w-full border-b border-charcoal-faint/60" />
+        <div className="w-full border-b border-charcoal-faint/60 " />
       </div>
-      <div className="flex flex-col sm:grid sm:grid-cols-2 gap-4 w-full">
+      <div className="flex flex-col sm:grid sm:grid-cols-2 gap-4 w-full ">
         {ProjectsInfo.map((p) => (
           <SingleProject
             name={p.name}
@@ -37,7 +59,7 @@ function Projects() {
           />
         ))}
       </div>
-      <div className="flex justify-between font-space text-xxs md:text-xs text-charcoal-faint/40 w-full border-t border-charcoal-faint/40 pt-2 mt-2">
+      <div className="flex justify-between font-space text-xxs md:text-xs text-charcoal-faint/40 w-full border-t border-charcoal-faint/40 pt-2 mt-2 bottom-decor">
         <span>SEG.02 // PROJECTS</span>
         <span>▲▲▲▲▲▲▲▲▲▲ 100%</span>
         <span>NEXT :: EXPERIENCE LOG</span>
