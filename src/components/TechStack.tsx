@@ -32,6 +32,7 @@ function TechStack() {
         start: "top center",
       },
     });
+    techTl.from(".tech-title", { duration: 0.3, opacity: 0, y: 20 });
     gsap.fromTo(
       ".animate",
       {
@@ -56,7 +57,7 @@ function TechStack() {
       className="w-[90vw] md:w-[80vw] lg:w-[70vw] h-fit mt-4 pb-6"
       id="tech"
     >
-      <div className="flex items-center gap-3 mb-6">
+      <div className="flex items-center gap-3 mb-6 tech-title">
         <div className="h-2 w-2 bg-charcoal shrink-0" />
         <span className="font-courier text-xs sm:text-sm text-charcoal font-bold tracking-wider shrink-0">
           [ TECH_STACK ] // CAPABILITY.MATRIX
