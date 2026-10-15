@@ -32,7 +32,9 @@ function TechStack() {
         start: "top center",
       },
     });
-    techTl.from(".tech-title", { duration: 0.3, opacity: 0, y: 20 });
+    techTl
+      .from(".tech-title", { duration: 0.3, opacity: 0, y: 20 })
+      .from(".title-decor", { duration: 0.3, opacity: 0, y: 20 });
     techTl.from(".techsection-title", {
       duration: 0.3,
       opacity: 0,
