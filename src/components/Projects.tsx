@@ -1,4 +1,7 @@
+import { useGSAP } from "@gsap/react";
 import SingleProject from "./ui/SingleProject";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const ProjectsInfo = [
   {
@@ -13,6 +16,15 @@ const ProjectsInfo = [
 ];
 
 function Projects() {
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const projectsTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#projects",
+        start: "top center",
+      },
+    });
+  });
   return (
     <section
       className="w-[90vw] md:w-[80vw] lg:w-[70vw] h-fit mt-4 pb-6"
