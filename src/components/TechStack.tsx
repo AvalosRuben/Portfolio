@@ -41,13 +41,16 @@ function TechStack() {
       y: 20,
       stagger: 0.2,
     });
-    techTl.from(".techsection-tool", {
-      duration: 0.3,
-      opacity: 0,
-      y: 20,
-      stagger: 0.2,
-    });
+    techTl
+      .from(".techsection-tool", {
+        duration: 0.3,
+        opacity: 0,
+        y: 20,
+        stagger: 0.2,
+      })
+      .from(".animate", { duration: 0.3, opacity: 0, y: 20, stagger: 0.2 });
     gsap.fromTo(
+      //I won't add this to the timeline so when the images appear, they're already moving :)
       ".animate",
       {
         rotation: "-20°",
