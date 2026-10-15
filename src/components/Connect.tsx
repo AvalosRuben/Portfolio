@@ -27,7 +27,7 @@ function Connect() {
     const connectTl = gsap.timeline({
       scrollTrigger: {
         trigger: "#connect",
-        start: "top 70%",
+        start: "bottom bottom",
       },
     });
     connectTl
