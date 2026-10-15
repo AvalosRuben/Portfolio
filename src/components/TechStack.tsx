@@ -12,7 +12,7 @@ const TechStackInfo: TechStackSectionProps[] = [
   },
   {
     Title: "Frontend",
-    Tools: ["React.js", "TailwindCSS", "Vite", "Next.js"],
+    Tools: ["React.js", "TailwindCSS", "Vite", "Next.js", "GSAP"],
   },
   { Title: "Backend", Tools: ["Node.js", "FastAPI", "Gin-Gonic"] },
   { Title: "Infra", Tools: ["AWS", "Docker", "Vercel"] },
