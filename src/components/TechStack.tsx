@@ -34,14 +34,13 @@ function TechStack() {
     });
     techTl
       .from(".tech-title", { duration: 0.3, opacity: 0, y: 20 })
-      .from(".title-decor", { duration: 0.3, opacity: 0, y: 20 });
-    techTl.from(".techsection-title", {
-      duration: 0.3,
-      opacity: 0,
-      y: 20,
-      stagger: 0.2,
-    });
-    techTl
+      .from(".title-decor", { duration: 0.3, opacity: 0, y: 20 })
+      .from(".techsection-title", {
+        duration: 0.3,
+        opacity: 0,
+        y: 20,
+        stagger: 0.2,
+      })
       .from(".techsection-tool", {
         duration: 0.3,
         opacity: 0,
