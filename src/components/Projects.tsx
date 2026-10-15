@@ -24,6 +24,13 @@ function Projects() {
         start: "top center",
       },
     });
+
+    projectsTl.from(".single-project", {
+      duration: 0.3,
+      opacity: 0,
+      y: 20,
+      stagger: 0.3,
+    });
   });
   return (
     <section
