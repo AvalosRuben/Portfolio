@@ -18,7 +18,7 @@ function ExperiencieBlock({
   Number,
 }: ExperiencieBlockProps) {
   return (
-    <div className="w-full flex gap-2 justify-center pt-8 pr-4">
+    <div className="w-full flex gap-2 justify-center pt-8 pr-4 exp-block">
       <span className="text-sm font-space text-charcoal-faint pl-6 pr-4 whitespace-nowrap">
         {Number} //
       </span>
