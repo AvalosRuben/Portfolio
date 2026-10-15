@@ -32,7 +32,13 @@ function Connect() {
     });
     connectTl
       .from(".connect-title", { duration: 0.3, opacity: 0, y: 20 })
-      .from(".connect-links-box", { duration: 0.3, opacity: 0, y: 20 });
+      .from(".connect-links-box", { duration: 0.3, opacity: 0, y: 20 })
+      .from(".connect-section", {
+        duration: 0.3,
+        opacity: 0,
+        y: 20,
+        stagger: 0.3,
+      });
   });
   return (
     <section
